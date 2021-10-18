@@ -45,4 +45,9 @@ class ProductController extends Controller
         $product->delete();
         return redirect('/products');
     }
+
+    public function rofi()
+    {
+        return view('bootstrap');
+    }
 }
