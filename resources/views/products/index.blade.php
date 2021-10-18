@@ -2,7 +2,7 @@
 @section('content')
     <div class="container mt-3">
         <div class="row">
-            <div class="col-10 mx-auto card">
+            <div class="col-12 card p-4">
                 {{-- row buat judul konten --}}
                 <div class="row mt-2 mb-2">
 
@@ -28,7 +28,7 @@
                                     <th scope="col">Jenis Produk</th>
                                     <th scope="col">Harga Satuan</th>
                                     <th scope="col">Stok Produk</th>
-                                    <th scope="col" class="text-center" colspan="2">Action</th>
+                                    <th scope="col" class="text-center">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -46,7 +46,7 @@
                                     <td>
                                         <div class="row">
                                             <div class="col">
-                                                <form action="" method="GET">
+                                                <form action="/products/{{ $product->id }}/edit" method="GET">
                                                     <button class="btn btn-warning d-grid col-12 rounded-pill" type="submit">EDIT</button>
                                                 </form>
                                             </div>
