@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/create', [ProductController::class, 'showFormCreate']);
+Route::post('/products/create', [ProductController::class, 'prosesCreate']);
 Route::get('/products/{id}/edit', [ProductController::class, 'showFormEdit']);
+Route::put('/products/{id}/edit', [ProductController::class, 'prosesEditData']);
+Route::delete('/products/{id}/delete', [ProductController::class, 'prosesDelete']);
